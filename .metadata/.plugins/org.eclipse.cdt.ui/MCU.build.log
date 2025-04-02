@@ -1,0 +1,34 @@
+15:12:18 **** Incremental Build of configuration Debug for project MCU ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F723xx -c -I../USB_HOST/App -I-I../Middlewares/Third_Party/tflite-micro -I../Middlewares/Third_Party/tflite-micro -I../Middlewares/Third_Party/tflite-micro/tensorflow -I../Middlewares/Third_Party/tflite-micro/tensorflow/lite -I../Middlewares/Third_Party/tflite-micro/tensorflow/lite/micro -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../X-CUBE-AI -I../X-CUBE-AI/Target -O0 -ffunction-sections -fdata-sections -Wall -std=gnu11 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+cc    -c -o ../USB_HOST/Target/usbh_conf.o ../USB_HOST/Target/usbh_conf.c
+make: *** [<builtin>: ../USB_HOST/Target/usbh_conf.o] Error -1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:40:6: error: redefinition of 'ProcessEEGData'
+   40 | void ProcessEEGData(void) {
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:31:13: note: previous definition of 'ProcessEEGData' with type 'void(void)'
+   31 | static void ProcessEEGData(void) {
+      |             ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'ProcessEEGData':
+../Core/Src/main.c:44:1: error: stray '\302' in program
+   44 | <U+00A0><U+00A0><U+00A0><U+00A0>}
+      | ^~~~~~~~
+../Core/Src/main.c:44:2: error: stray '\302' in program
+   44 | <U+00A0><U+00A0><U+00A0><U+00A0>}
+      |         ^~~~~~~~
+../Core/Src/main.c:44:3: error: stray '\302' in program
+   44 | <U+00A0><U+00A0><U+00A0><U+00A0>}
+      |                 ^~~~~~~~
+../Core/Src/main.c:44:4: error: stray '\302' in program
+   44 | <U+00A0><U+00A0><U+00A0><U+00A0>}
+      |                         ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:31:13: warning: 'ProcessEEGData' defined but not used [-Wunused-function]
+   31 | static void ProcessEEGData(void) {
+      |             ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+15:12:19 Build Failed. 8 errors, 1 warnings. (took 1s.64ms)
+

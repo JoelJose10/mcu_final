@@ -1,0 +1,10 @@
+15:09:32 **** Incremental Build of configuration Debug for project f723e ****
+make -j16 all 
+arm-none-eabi-size  f723e.elf 
+   text	   data	    bss	    dec	    hex	filename
+  62756	    156	  11140	  74052	  12144	f723e.elf
+Finished building: default.size.stdout
+ 
+
+15:09:33 Build Finished. 0 errors, 0 warnings. (took 586ms)
+

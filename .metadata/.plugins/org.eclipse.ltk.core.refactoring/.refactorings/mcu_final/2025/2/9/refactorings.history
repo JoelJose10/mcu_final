@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mcu_final/Core/Src/tflite_model.h&apos; to &apos;tflite_model.c&apos;" description="Rename resource &apos;tflite_model.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/tflite_model.h" name="tflite_model.c" stamp="1740643195980" updateReferences="true"/>
+</session>
