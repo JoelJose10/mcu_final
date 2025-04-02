@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;MCU/Middlewares/Third_Party/tflite-micro/tensorflow/lite/experimental/microfrontend/lib/memmap&apos; to &apos;memmap.h&apos;" description="Rename resource &apos;memmap&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Middlewares/Third_Party/tflite-micro/tensorflow/lite/experimental/microfrontend/lib/memmap" name="memmap.h" stamp="1742390719478" updateReferences="true"/>
-</session>

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;f723e&apos;" deleteContents="true" description="Delete resource &apos;f723e&apos;" element1="/f723e" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1740589047699"/>&#x0A;<refactoring comment="Delete resource &apos;mcu_final/Core/Src/tflite_model.c&apos;" deleteContents="false" description="Delete resource &apos;mcu_final/Core/Src/tflite_model.c&apos;" element1="/mcu_final/Core/Src/tflite_model.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1740643117860"/>
-</session>
